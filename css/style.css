@@ -53,7 +53,7 @@ p {
 .nav > ul > li:hover { 
 	background: #ff3f40;
 }  
-.bg_white { 
+.bg-white { 
 	background: #fff; 
 } 
 .container { 
@@ -84,7 +84,7 @@ p {
 	width: 85%; 
 	float: right; 
 }
-.padd_r_15 { 
+.padd-r-15 { 
 	padding-right: 15px; 
 }
 .icon img { 
