@@ -38,7 +38,8 @@ p {
 	list-style: none; 
 	text-align: center; 
 	display: table-cell; 
-	vertical-align: middle; padding-top: 6px;
+	vertical-align: middle; 
+	padding-top: 6px;
 }
 .nav > ul > .active { 
 	background: #ff3f40;
@@ -79,7 +80,7 @@ p {
 .response { 
 	max-width: 100%; 
 }
-.top_image > img{ 
+.top-image > img{ 
 	box-shadow: 0px 2px 14px rgba(0, 0, 0, .6); 
 	width: 85%; 
 	float: right; 
@@ -89,8 +90,8 @@ p {
 }
 .icon img { 
 	position: absolute; 
-	top: 38%; width: 60px; 
-	right: 24%;  
+	top: 52%; width: 60px; 
+	right: 26%;  
 }
 .red { 
 	background: #ff3f40; color: #fff;
