@@ -107,7 +107,10 @@ h2 {
 .top-image > img{ 
 	box-shadow: 0px 2px 14px rgba(0, 0, 0, .6); 
 	width: 85%; 
-	float: right; 
+	float: right;  
+}
+.top-image{
+	position: relative;
 }
 .padd-r-15 { 
 	padding-right: 15px; 
@@ -116,7 +119,8 @@ h2 {
 	position: absolute; 
 	top: 48%; 
 	width: 60px; 
-	right: 24%;  
+	right: 50%;  
+	left: 50%;  
 }
 .red { 
 	background: #ff3f40; color: #fff;
@@ -214,6 +218,9 @@ hr{
 	padding: 0 15px;
 	cursor: pointer;
 }
+.category > li:hover{ 
+	color: #ff3f40;
+}
 .active_filter{
 	color: #265ea5;
 }
@@ -242,7 +249,8 @@ input[type="submit"] {
 	margin-top: 20px;  
 	font-weight: bold;
 	margin-left: 10px;
-}
+	cursor: pointer;
+} 
 #subscribe input[type="phone"], input[type="text"], input[type="email"] { 
 	width: 20%;
 	font-family: Arial;
@@ -305,7 +313,103 @@ input[type="submit"] {
 	background: #fff;
 	padding-right: 8%;
 }
- .row{
+.row{
  	background: #312f30;
  	display: table;
- }
+}
+.tb-img
+{
+ 	width: 285px;
+}
+#about-us .title > p{
+ 	width: 45%;
+}
+#about-us{
+	padding-top: 0;
+}
+.tb-img{
+ 	float: left;
+ 	margin: 0 70px 10px 0;
+}
+.tabs h2{
+	font-weight: 400;
+}
+
+.tabs ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+.tabs ul > li > a{
+	 color: #4c4c4c;
+	 text-decoration: none; 
+	 font-style: italic;
+}
+.tabs ul > li > a:hover{
+	color: #ff3f40;
+}
+.tabs ul{
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+input[type="radio"]{
+	display: none;
+	position: absolute;
+}
+.tabs label{
+	cursor: pointer;
+	display: table-cell;
+	padding-right: 18px;
+}
+.tabs > label > img{
+	width: 150px; 
+	height: 200px; 
+	object-fit: cover;  
+}
+.tabs > label > img:hover{ 
+	opacity: 0.6;
+}
+.tabs{ 
+	overflow: hidden;  
+}
+.tabs section, .tabs > label > p{
+	display: none;
+	padding: 0;
+	margin: 0;
+} 
+#tab1:checked ~ label > .tab1,
+#tab2:checked ~ label > .tab2,
+#tab3:checked ~ label > .tab3,
+#tab4:checked ~ label > .tab4 {
+	display: block;
+	margin-top: -49px;
+ 	background: #000;
+	opacity: 0.7;
+	color: #fff;
+	position: relative;
+	top: -19%;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+} 
+#tab1:checked ~ #content-tab1,
+#tab2:checked ~ #content-tab2,
+#tab3:checked ~ #content-tab3,
+#tab4:checked ~ #content-tab4 {
+ 	display: contents;
+} 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}  
