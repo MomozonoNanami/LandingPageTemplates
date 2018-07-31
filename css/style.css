@@ -320,8 +320,7 @@ input[type="email"] {
 
 .contact-form input[type="email"],
 .contact-form input[type="text"] {
-    width: 47%;
-    float: left;
+    width: 100%; 
     background: #e5e5e5;
     border: none;
     padding: 20px 35px;
@@ -329,11 +328,17 @@ input[type="email"] {
     box-sizing: border-box;
     margin-bottom: 35px;
 }
-
-.contact-form input[type="text"] {
-    margin-right: 35px;
+.contact-form div{
+	width: 50%;
+	float: left; 
+	box-sizing: border-box;
 }
-
+.contact-form .right{
+	padding-right: 10px;
+}
+ .contact-form .left{
+	padding-left: 10px;
+}
 .contact-form textarea {
     width: 100%;
     background: #e5e5e5;
@@ -537,14 +542,16 @@ input[type="radio"] {
         width: 84%;
         padding-bottom: 20px;
     }
-    .contact-form input[type="email"],
-    .contact-form input[type="text"] {
+    .contact-form  div {
         width: 100%;
     }
     .contact-info {
         width: 100%;
         padding-right: 10px;
         width: 84%;
+    }
+    .contact-form .right , .contact-form .left{
+    	padding: 0;
     }
     .icon i {
         display: block;
@@ -600,10 +607,7 @@ input[type="radio"] {
         left: 0;
     }
 
-    .contact-form input[type="text"] {
-        margin-right: 20px;
-    }
-
+    
     .contact-info {
         padding: 60px 0 82px 0;
     }
@@ -611,17 +615,16 @@ input[type="radio"] {
     .contact-info {
         width: 28%;
     }
-
-    h1 {
-        font-size: 31px;
-        letter-spacing: 0;
-    }
 }
 
 @media screen and (max-width: 1024px) {
     .tabs label>img {
         width: 115px;
         height: 176px;
+    }
+    h1 {
+        font-size: 31px;
+        letter-spacing: 0;
     }
 }
 
