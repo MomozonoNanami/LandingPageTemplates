@@ -186,7 +186,18 @@ footer i {
     line-height: 40px!important;
     margin-right: 15px;
 }
-
+footer i:nth-child(4):hover{
+    color: #0077b5;
+}
+footer i:nth-child(3):hover{
+    color: #3b5998;
+}
+footer i:nth-child(2):hover{
+    color: #dd4d40;
+}
+footer i:nth-child(1):hover{
+    color: #00a2f4;
+}
 footer .icon {
     padding-top: 35px;
 }
